@@ -1,0 +1,737 @@
+body,
+ul,
+p {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+html,
+body {
+	position: relative;
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+.loading {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	/* z-index: 9999999; */
+	background-color: #FFFFFF;
+}
+
+.loading_bar {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #FF2E81;
+	width: 0%;
+	height: 1px;
+}
+.loading_qc{}
+/*-------------------------------------------------loadingAnimation*/
+.loading_qc{
+	width: 15px;
+  	height: 15px;
+  	position: absolute;right: 5px;
+}
+.loading_qc>div{
+	background-color: #FF2E81;
+  	width: 15px;
+  	height: 15px;
+  	border-radius: 100%;
+  	margin: 2px;
+  	-webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+ 	 border: 2px solid #FF2E81;
+  	border-bottom-color: transparent;
+  	background: transparent !important;
+  	display: inline-block;
+  	-webkit-animation: rotate 0.75s 0s linear infinite;
+ 	animation: rotate 0.75s 0s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg) scale(1);
+            transform: rotate(0deg) scale(1); }
+
+  50% {
+    -webkit-transform: rotate(180deg) scale(0.6);
+            transform: rotate(180deg) scale(0.6); }
+
+  100% {
+    -webkit-transform: rotate(360deg) scale(1);
+            transform: rotate(360deg) scale(1); } }
+.swiper-container {
+	width: 100%;
+	height: 100%;
+	background: url("../images/bg.png")/*tpa=http://www.w2gou.com/images/bg.png*/;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.page {
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.swiper-button-next {
+	width: 130px;
+	height: 116px;
+	margin-top: -58px;
+	right: 54px;
+	background: none;
+}
+
+.swiper-button-prev {
+	background: url("../images/public_back.png")/*tpa=http://www.w2gou.com/images/public_back.png*/;
+	width: 15px;
+	height: 24px;
+	left: 54px;
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+	display: none;
+}
+
+.go_btn {
+	width: 130px;
+	height: 116px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.go_btn_dot {
+	width: 41px;
+	height: 41px;
+	position: absolute;
+	top: 0;
+	right: 33px;
+}
+
+.logo {
+	width: 171px;
+	height: 54px;
+	position: absolute;
+	top: 40px;
+	left: 40px;
+}
+
+.logo img {
+	width: 100%;
+}
+
+.page_1 .title {
+	width: 850px;
+}
+
+.page_1 .title img {
+	width: 100%;
+}
+
+.page_1 .content {
+	position: relative;
+	margin-top: 83px;
+	height: 450px;
+}
+
+.page_1 .cont_sz {
+	width: 828px;
+	height: 247px;
+	position: absolute;
+	left: 22px;
+	top: 184px;
+}
+
+.page_1 .cont_weg_1 {
+	width: 351px;
+	height: 403px;
+	position: absolute;
+	left: 307px;
+	top: 0;
+}
+
+.page_1 .content .ewm {
+	background: url("../images/page1/public_qr_square.png")/*tpa=http://www.w2gou.com/images/page1/public_qr_square.png*/ no-repeat center 100%;
+	width: 190px;
+	height: 190px;
+	position: absolute;
+	left: 763px;
+	top: 24px;
+}
+
+.page_1 .content .ewm p {
+	font-size: 17px;
+	margin-top: 6px;
+	color: #595959;
+}
+.page_1 .content .ewm img {
+	width: 161px;
+	height: 161px;
+	margin: 14.5px;
+}
+/*修改图片后的*/
+.page_1 .content .ewm-wrap{
+	width: 260px;
+	/*height: 190px;*/
+	position: absolute;
+	left: 763px;
+	top: 24px;
+}
+.page_1 .content .ewm-wrap img{
+	width:100%;
+}
+.page_2 .cont_weg_2 {
+	width: 255px;
+	height: 378px;
+	position: absolute;
+	left: 82px;
+	top: 373px;
+}
+
+.page_3 .cont_weg_3 {
+	width: 268px;
+	height: 249px;
+	position: absolute;
+	right: 29px;
+	top: 8px;
+}
+
+.page_4 .title {
+	width: 932px;
+	height: 145px;
+}
+
+.page_4 .cont_weg_4 img {
+	width: 445px;
+	height: 326px;
+}
+
+.page_4 .cont_weg_4 p {
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.page_5 .title {
+	width: 935px;
+	height: 203px;
+}
+
+.page_5 .content {
+	position: relative;
+	margin-top: 85px;
+	height: 500px;
+}
+
+.page_5 .ewm {
+	background: url("../images/page5/page5_qr_square.png")/*tpa=http://www.w2gou.com/images/page5/page5_qr_square.png*/ no-repeat center 100%;
+	width: 340px;
+	height: 330px;
+	position: absolute;
+	left: 100px;
+	top: 28px;
+}
+
+.page_5 .ewm img {
+	width: 273px;
+	height: 273px;
+	margin: 32px 0 24px 15px;
+}
+
+.page_5 .ewm p {
+	font-size: 22px;
+	color: #4C4B4B;
+	margin-top: 12px;
+}
+/*修改图片后的*/
+.page_5 .content .ewm-wrap{
+	width: 272px;
+	/*height: 190px;*/
+	position: absolute;
+	left: 100px;
+	top: 28px;
+}
+.page_5 .content .ewm-wrap img {
+	width: 100%;
+}
+
+.page_5 .dialog {
+	width: 229px;
+	height: 101px;
+	position: absolute;
+	right: 183px;
+	top: 0;
+}
+
+.page_5 .cont_weg_5 {
+	width: 357px;
+	height: 346px;
+	position: absolute;
+	right: 108px;
+	top: 80px;
+}
+
+
+/* 泡泡 */
+
+.bubble {
+	position: relative;
+	list-style: none;
+	height: 250px;
+}
+
+.bubble li p {
+	position: absolute;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	color: #FFCC00;
+	text-align: center;
+	width: 155px;
+	height: 155px;
+	line-height: 155px;
+	font-size: 26px;
+}
+
+.bubble .bubble_light p {
+	background-image: url("../images/page4/page4_bubble1.png")/*tpa=http://www.w2gou.com/images/page4/page4_bubble1.png*/;
+}
+
+.bubble .bubble_dark p {
+	background-image: url("../images/page4/page4_bubble2.png")/*tpa=http://www.w2gou.com/images/page4/page4_bubble2.png*/;
+}
+
+.bubble .bubble_1 p {
+	top: 120px;
+	left: 0;
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+}
+
+.bubble .bubble_2 p {
+	top: 24px;
+	left: 112px;
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+}
+
+.bubble .bubble_3 p {
+	top: 194px;
+	left: 139px;
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+}
+
+.bubble .bubble_4 p {
+	top: 65px;
+	left: 289px;
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+}
+
+.bubble .bubble_5 p {
+	top: 0;
+	left: 420px;
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+	transform: scale(0.7);
+}
+
+.bubble .bubble_6 p {
+	top: 115px;
+	left: 439px;
+	-webkit-transform: scale(0.5);
+	-moz-transform: scale(0.5);
+	transform: scale(0.5);
+}
+
+.bubble .bubble_7 p {
+	top: 75px;
+	left: 589px;
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+}
+
+.bubble .bubble_8 p {
+	top: 45px;
+	left: 727px;
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+	transform: scale(0.7);
+}
+
+.bubble .bubble_9 p {
+	top: 201px;
+	left: 729px;
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+}
+
+.bubble .bubble_10 p {
+	top: 117px;
+	left: 850px;
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+}
+.footer-text{
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    color: #333;
+    font-size: 16px;
+    background: #fff;
+}
+.footer-text a{
+	color:#333;
+}
+.footer-text a:hover{
+	text-decoration: underline;
+}
+footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: #000000;
+	width: 100%;
+	color: #999999;
+	text-align: center;
+	-webkit-transform: translateY(100px);
+	transform: translateY(100px);
+	padding: 10px 0;
+}
+
+footer ul {
+	overflow: hidden;
+	width: 206px;
+	margin: 0 auto 5px;
+	font-size: 12px;
+}
+
+footer ul li {
+	list-style: none;
+	float: left;
+}
+
+footer ul li a {
+	color: #999999;
+	padding: 0 10px;
+	border-right: 1px solid #999999;
+}
+
+footer p a:hover,
+footer ul li a:hover {
+	color: #FFDA43;
+}
+
+footer ul li:last-child a {
+	border-right: 0;
+}
+
+footer p {
+	font-size: 12px;
+	line-height: 20px;
+}
+
+footer a {
+	color: #999999;
+	display: inline-block;
+}
+
+footer a img {
+	float: left;
+}
+
+
+/* 动画效果 */
+
+
+/* 边角平移 */
+
+.Edge {
+	-webkit-animation: Edge 15s linear 0s infinite none;
+	-moz-animation: Edge 15s linear 0s infinite none;
+	animation: Edge 15s linear 0s infinite none;
+}
+
+@-webkit-keyframes Edge {
+	0% {
+		transform: translate(0, -50px);
+	}
+	25% {
+		transform: translate(50px, 0);
+	}
+	50% {
+		transform: translate(0, 50px);
+	}
+	75% {
+		transform: translate(-50px, 0);
+	}
+	100% {
+		transform: translate(0, -50px);
+	}
+}
+
+@-moz-keyframes Edge {
+	0% {
+		transform: translate(0, -50px);
+	}
+	25% {
+		transform: translate(50px, 0);
+	}
+	50% {
+		transform: translate(0, 50px);
+	}
+	75% {
+		transform: translate(-50px, 0);
+	}
+	100% {
+		transform: translate(0, -50px);
+	}
+}
+
+@keyframes Edge {
+	0% {
+		transform: translate(0, -50px);
+	}
+	25% {
+		transform: translate(50px, 0);
+	}
+	50% {
+		transform: translate(0, 50px);
+	}
+	75% {
+		transform: translate(-50px, 0);
+	}
+	100% {
+		transform: translate(0, -50px);
+	}
+}
+
+
+/* 上下平移 */
+
+.UpAndDown3 {
+	-webkit-animation: UpAndDown 9s linear 0s infinite none;
+	-moz-animation: UpAndDown 9s linear 0s infinite none;
+	animation: UpAndDown 9s linear 0s infinite none;
+}
+
+.UpAndDown5 {
+	-webkit-animation: UpAndDown 15s linear 0s infinite none;
+	-moz-animation: UpAndDown 15s linear 0s infinite none;
+	animation: UpAndDown 15s linear 0s infinite none;
+}
+
+@-webkit-keyframes UpAndDown {
+	0% {
+		transform: translate(0, 50px) scale(0.8);
+	}
+	50% {
+		transform: translate(0, -50px) scale(1);
+	}
+	100% {
+		transform: translate(0, 50px) scale(0.8);
+	}
+}
+
+@-moz-keyframes UpAndDown {
+	0% {
+		transform: translate(0, 50px) scale(0.8);
+	}
+	50% {
+		transform: translate(0, -50px) scale(1);
+	}
+	100% {
+		transform: translate(0, 50px) scale(0.8);
+	}
+}
+
+@keyframes UpAndDown {
+	0% {
+		transform: translate(0, 50px) scale(0.8);
+	}
+	50% {
+		transform: translate(0, -50px) scale(1);
+	}
+	100% {
+		transform: translate(0, 50px) scale(0.8);
+	}
+}
+
+
+/* 对角平移 */
+
+.Horn {
+	-webkit-animation: Horn 12s linear 0s infinite none;
+	-moz-animation: Horn 12s linear 0s infinite none;
+	animation: Horn 12s linear 0s infinite none;
+}
+
+@-webkit-keyframes Horn {
+	0% {
+		transform: translate(-30px, -30px);
+	}
+	25% {
+		transform: translate(30px, -30px);
+	}
+	50% {
+		transform: translate(-30px, 30px);
+	}
+	75% {
+		transform: translate(30px, 30px);
+	}
+	100% {
+		transform: translate(-30px, -30px);
+	}
+}
+
+@-moz-keyframes Horn {
+	0% {
+		transform: translate(-30px, -30px);
+	}
+	25% {
+		transform: translate(30px, -30px);
+	}
+	50% {
+		transform: translate(-30px, 30px);
+	}
+	75% {
+		transform: translate(30px, 30px);
+	}
+	100% {
+		transform: translate(-30px, -30px);
+	}
+}
+
+@keyframes Horn {
+	0% {
+		transform: translate(-30px, -30px);
+	}
+	25% {
+		transform: translate(30px, -30px);
+	}
+	50% {
+		transform: translate(-30px, 30px);
+	}
+	75% {
+		transform: translate(30px, 30px);
+	}
+	100% {
+		transform: translate(-30px, -30px);
+	}
+}
+
+
+/* 向上移动 */
+
+.UpMove {
+	-webkit-animation: UpMove .5s linear 0s normal none;
+	-moz-animation: UpMove .5s linear 0s normal none;
+	animation: UpMove .5s linear 0s normal none;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes UpMove {
+	from {
+		-webkit-transform: translateY(100px);
+		/*transform:translateY(100px);*/
+		opacity: 0;
+	}
+	to {
+		-webkit-transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes UpMove {
+	from {
+		transform: translateY(100px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes UpMove {
+	from {
+		transform: translateY(100px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@media screen and (max-width: 1440px) {
+	.page {
+		-webkit-transform: scale(.8);
+		-moz-transform: scale(.8);
+		transform: scale(.8);
+	}
+	.swiper-button-next {
+		-webkit-transform: scale(.8);
+		-moz-transform: scale(.8);
+		transform: scale(.8);
+	}
+	.swiper-button-prev {
+		-webkit-transform: scale(.8);
+		-moz-transform: scale(.8);
+		transform: scale(.8);
+	}
+}
+
+@media screen and (max-width: 1076px) {
+	.page {
+		-webkit-transform: scale(.6);
+		-moz-transform: scale(.6);
+		transform: scale(.6);
+	}
+	.swiper-button-next {
+		-webkit-transform: scale(.6);
+		-moz-transform: scale(.6);
+		transform: scale(.6);
+	}
+	.swiper-button-prev {
+		-webkit-transform: scale(.6);
+		-moz-transform: scale(.6);
+		transform: scale(.6);
+	}
+}

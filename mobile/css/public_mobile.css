@@ -1,0 +1,612 @@
+body,ul,p{
+	margin:0;
+	padding:0;
+	border:0;
+}
+html, body {
+    position: relative;
+    height: 100%;
+}
+a {
+    text-decoration: none;
+}
+.loading {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	/* z-index: 9999999; */
+	background-color: #FFFFFF;
+}
+
+.loading_bar {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #FF2E81;
+	width: 0%;
+	height: 1px;
+}
+.loading_qc{}
+/*-------------------------------------------------loadingAnimation*/
+.loading_qc{
+	width: 15px;
+  	height: 15px;
+  	position: absolute;right: 5px;
+}
+.loading_qc>div{
+	background-color: #FF2E81;
+  	width: 15px;
+  	height: 15px;
+  	border-radius: 100%;
+  	margin: 2px;
+  	-webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+ 	 border: 2px solid #FF2E81;
+  	border-bottom-color: transparent;
+  	background: transparent !important;
+  	display: inline-block;
+  	-webkit-animation: rotate 0.75s 0s linear infinite;
+ 	animation: rotate 0.75s 0s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg) scale(1);
+            transform: rotate(0deg) scale(1); }
+
+  50% {
+    -webkit-transform: rotate(180deg) scale(0.6);
+            transform: rotate(180deg) scale(0.6); }
+
+  100% {
+    -webkit-transform: rotate(360deg) scale(1);
+            transform: rotate(360deg) scale(1); } }
+.swiper-container {
+    width: 100%;
+    height: 100%;
+	background:url("../images/public_bg.png")/*tpa=http://www.w2gou.com/mobile/images/public_bg.png*/;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+.page{
+	margin:0 auto;
+	position: relative;
+}
+.link_up{
+	width: 1.8rem;
+	height: 1.8rem;
+	position:absolute;
+	bottom: 2.3rem;
+	left: 50%;
+	margin-left:-18px;
+}
+.page_1 .title{
+	width: 30rem;
+    margin-right: 2rem;
+}
+.page_1 .title img{
+	width: 100%;
+}
+.page_1 .content{
+	position: relative;
+    margin-top: 4rem;
+    height: 24.5rem;
+}
+.page_1 .cont_sz{
+	width: 22rem;
+    position: absolute;
+    left: 0;
+    top: 16.5rem;
+}
+.page_1 .cont_weg_1{
+	width: 17.5rem;
+    position: absolute;
+    left: 2rem;
+    top: 0;
+}
+.page_1 .content .ewm{
+	background: url(../images/page1/public_qr_square.png)/*tpa=http://www.w2gou.com/mobile/images/page1/public_qr_square.png*/ no-repeat center center;
+	background-size: 100%;
+    width: 9.5rem;
+    height: 9.5rem;
+    position: absolute;
+    left: 21rem;
+    top: 5rem;
+}
+.page_1 .content .ewm p{
+	font-size: 1.1rem;
+    margin-top: 6px;
+    width: 13rem;
+    margin-left: -1.7rem;
+    color: #595959;
+}
+.page_1 .content .ewm img{
+	width: 8rem;
+    height: 8rem;
+    margin: .75rem;
+	z-index: 99999;
+}
+/*修改图片后的*/
+.page_1 .content .ewm-wrap{
+	width: 13rem;
+	/*height: 190px;*/
+	position: absolute;
+	left: 19rem;
+    top: 5rem;
+}
+.page_1 .content .ewm-wrap img{
+	width:100%;
+}
+.page_2 .title{
+	width: 30rem;
+    margin-right: 2rem;
+}
+.page_2 .title img{
+	width: 100%;
+}
+.page_2 .content{
+	position: relative;
+    margin-top: 4rem;
+	height: 30.5rem;
+}
+.page_2 .cont_sj{
+	width: 16.5rem;
+    position: absolute;
+    right: 1rem;
+    top: 0;
+}
+.page_2 .cont_dialog{
+	width: 11.9rem;
+    position: absolute;
+    left: .5rem;
+    top: 0;
+}
+.page_2 .cont_weg_2{
+	width: 13.5rem;
+    position: absolute;
+    left: 1rem;
+    top: 9rem;
+}
+.page_3 .title{
+	width: 30rem;
+    margin-right: 2rem;
+}
+.page_3 .title img{
+	width: 100%;
+}
+.page_3 .content{
+	position: relative;
+    margin-top: 4rem;
+	height: 32.5rem;
+}
+.page_3 .cont_lz{
+	width: 32.1rem;
+    position: absolute;
+    right: 1rem;
+    top: 0;
+}
+.page_3 .cont_weg_3{
+	width: 13.5rem;
+    position: absolute;
+    right: 0;
+    bottom: 0rem;
+}
+.page_4 .title{
+	width: 30rem;
+    margin-right: 2rem;
+}
+.page_4 .title img{
+	width: 100%;
+}
+.page_4 .content{
+	position: relative;
+    margin-top: 4rem;
+    height: 33rem;
+}
+.page_4 .cont_pic{
+	width: 32rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.page_4 .cont_weg_4{
+	width: 21rem;
+    position: absolute;
+    left: 6rem;
+    top: 18rem;
+}
+.page_4 .content+p{
+	font-size: 1.5rem;
+	font-weight:bold;
+}
+.page_5 .title{
+	width: 30rem;
+    margin-right: 2rem;
+}
+.page_5 .title img{
+	width: 100%;
+}
+.page_5 .content{
+	position: relative;
+    margin-top: 4rem;
+    height: 30.5rem;
+}
+.page_5 .ewm{
+	background: url(../images/page5/page5_qr_square.png)/*tpa=http://www.w2gou.com/mobile/images/page5/page5_qr_square.png*/ no-repeat center 100%;
+    background-size: 100%;
+    width: 14rem;
+    height: 13.5rem;
+    position: absolute;
+    left: 0;
+    top: 8rem;
+}
+.page_5 .ewm img{
+	width: 11.6rem;
+    height: 11.6rem;
+    margin: 1.1rem 0 1.2rem .45rem;
+}
+.page_5 .ewm p{
+	font-size: 1.2rem;
+    color: #4C4B4B;
+}
+/*修改图片后的*/
+.page_5 .content .ewm-wrap{
+	width: 14rem;
+	height: 13.5rem;
+	position: absolute;
+    left: 0;
+    top: 8rem;
+}
+.page_5 .content .ewm-wrap img {
+	width: 100%;
+}
+.page_5 .cont_dialog{
+	width: 11.4rem;
+    position: absolute;
+    left: 12rem;
+    top: 2rem;
+}
+.page_5 .cont_weg_5{
+	width: 17.8rem;
+    position: absolute;
+    right: 0;
+    top: 7rem;
+}
+.logo{
+	width: 237px;
+	height: 74px;
+	position:absolute;
+	top:-7rem;
+	left:-.5rem;
+}
+.logo img{
+	width:100%;
+}
+footer{
+	width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 1.2rem;
+    background: #000000;
+    color: #808080;
+    /*height: 3rem;*/
+    padding: 1rem 0;
+}
+footer ul{
+	overflow: hidden;
+	display: inline-block;
+	/*margin: 1rem auto .5rem;*/
+	font-size: 1.2rem;
+}
+footer ul li{
+	list-style:none;
+	float:left;
+}
+footer ul li a{
+	color: #808080;
+	padding:0 .8rem;
+	border-right:.1rem solid #808080;
+}
+footer ul li:last-child a{
+	border-right:0;
+}
+footer p {
+	font-size: 1.2rem;
+	line-height: 2rem;
+}
+footer a {
+	color: #808080;
+	display: inline-block;
+	height: 1.2rem;
+	line-height: 1.2rem;
+}
+footer a img{
+	float: left;
+}
+/*footer p{*/
+	/*text-align:center;*/
+/*}*/
+
+/* �����ƶ� */
+.up_move_hide_a{
+	position: absolute;
+    top: 0;
+    left: 0;
+	opacity:0;
+	transform:translateY(0);
+	-webkit-animation: upMoveHide 2s linear 0s infinite none; 
+	-moz-animation: upMoveHide 2s linear 0s infinite none; 
+	animation: upMoveHide 2s linear 0s infinite none;
+}
+.up_move_hide_b{
+	position: absolute;
+    top: 10px;
+    left: 0;
+	opacity:0;
+	transform:translateY(0);
+	-webkit-animation: upMoveHide 2s linear .5s infinite none; 
+	-moz-animation: upMoveHide 2s linear .5s infinite none; 
+	animation: upMoveHide 2s linear .5s infinite none;
+}
+@-webkit-keyframes upMoveHide{
+	0{
+		opacity:0;
+		transform:translateY(0);
+	}
+	20%{
+		opacity:0.6;
+		transform:translateY(-10px);
+	}
+	40%{
+		opacity:0.8;
+		transform:translateY(-20px);
+	}
+	50%{
+		opacity:1;
+		transform:translateY(-25px);
+	}
+	70%{
+		opacity:1;
+		transform:translateY(-35px);
+	}
+	80%{
+		opacity:0.8;
+		transform:translateY(-40px);
+	}
+	100%{
+		opacity:0;
+		transform:translateY(-50px);
+	}
+}
+@-moz-keyframes upMoveHide{ 
+	0{
+		opacity:0;
+		transform:translateY(0);
+	}
+	20%{
+		opacity:0.6;
+		transform:translateY(-10px);
+	}
+	40%{
+		opacity:0.8;
+		transform:translateY(-20px);
+	}
+	50%{
+		opacity:1;
+		transform:translateY(-25px);
+	}
+	70%{
+		opacity:1;
+		transform:translateY(-35px);
+	}
+	80%{
+		opacity:0.8;
+		transform:translateY(-40px);
+	}
+	100%{
+		opacity:0;
+		transform:translateY(-50px);
+	}
+}
+@keyframes upMoveHide{ 
+	0{
+		opacity:0;
+		transform:translateY(0);
+	}
+	20%{
+		opacity:0.6;
+		transform:translateY(-10px);
+	}
+	40%{
+		opacity:0.8;
+		transform:translateY(-20px);
+	}
+	50%{
+		opacity:1;
+		transform:translateY(-25px);
+	}
+	70%{
+		opacity:1;
+		transform:translateY(-35px);
+	}
+	80%{
+		opacity:0.8;
+		transform:translateY(-40px);
+	}
+	100%{
+		opacity:0;
+		transform:translateY(-50px);
+	}
+}
+.down_move_hide{
+	-webkit-animation: downMoveHide 1s linear 0s normal none; 
+	-moz-animation: downMoveHide 1s linear 0s normal none; 
+	animation: downMoveHide 1s linear 0s normal none;
+}
+@-webkit-keyframes downMoveHide{
+	from{
+		transform:translateY(-200%);
+	}
+	to{
+		transform:translateY(0);
+	}
+}
+@-moz-keyframes downMoveHide{
+	from{
+		transform:translateY(-200%);
+	}
+	to{
+		transform:translateY(0);
+	}
+}
+@keyframes downMoveHide{ 
+	from{
+		transform:translateY(-200%);
+	}
+	to{
+		transform:translateY(0);
+	}
+}
+.right_move_hide{
+	-webkit-animation: rightMoveHide 1s linear 0s normal none; 
+	-moz-animation: rightMoveHide 1s linear 0s normal none; 
+	animation: rightMoveHide 1s linear 0s normal none;
+}
+@-webkit-keyframes rightMoveHide{
+	0%{
+		transform:translateX(-100%);
+	}
+	65%{
+		transform:translateX(-15%);
+	}
+	100%{
+		transform:translateX(0);
+	}
+}
+@-moz-keyframes rightMoveHide{
+	0%{
+		transform:translateX(-100%);
+	}
+	65%{
+		transform:translateX(-15%);
+	}
+	100%{
+		transform:translateX(0);
+	}
+}
+@keyframes rightMoveHide{ 
+	0%{
+		transform:translateX(-100%);
+	}
+	65%{
+		transform:translateX(-15%);
+	}
+	100%{
+		transform:translateX(0);
+	}
+}
+.left_move_hide{
+	-webkit-animation: leftMoveHide 1s linear 0s normal none; 
+	-moz-animation: leftMoveHide 1s linear 0s normal none; 
+	animation: leftMoveHide 1s linear 0s normal none;
+}
+@-webkit-keyframes leftMoveHide{
+	0%{
+		transform:translateX(100%);
+	}
+	65%{
+		transform:translateX(15%);
+	}
+	100%{
+		transform:translateX(0);
+	}
+}
+@-moz-keyframes leftMoveHide{
+	0%{
+		transform:translateX(100%);
+	}
+	65%{
+		transform:translateX(15%);
+	}
+	100%{
+		transform:translateX(0);
+	}
+}
+@keyframes leftMoveHide{ 
+	0%{
+		transform:translateX(100%);
+	}
+	65%{
+		transform:translateX(15%);
+	}
+	100%{
+		transform:translateX(0);
+	}
+}
+.scale_hide{
+	-webkit-animation: scaleHide 1s linear 0s normal none; 
+	-moz-animation: scaleHide 1s linear 0s normal none; 
+	animation: scaleHide 1s linear 0s normal none;
+}
+@-webkit-keyframes scaleHide{
+	0%{
+		opacity:0;
+		transform:scale(0);
+	}
+	65%{
+		opacity:0.85;
+		transform:scale(0.85);
+	}
+	100%{
+		opacity:1;
+		transform:scale(1);
+	}
+}
+@-moz-keyframes scaleHide{
+	0%{
+		opacity:0;
+		transform:scale(0);
+	}
+	65%{
+		opacity:0.85;
+		transform:scale(0.85);
+	}
+	100%{
+		opacity:1;
+		transform:scale(1);
+	}
+}
+@keyframes scaleHide{ 
+	0%{
+		opacity:0;
+		transform:scale(0);
+	}
+	65%{
+		opacity:0.85;
+		transform:scale(0.85);
+	}
+	100%{
+		opacity:1;
+		transform:scale(1);
+	}
+}
+
+
+
+
