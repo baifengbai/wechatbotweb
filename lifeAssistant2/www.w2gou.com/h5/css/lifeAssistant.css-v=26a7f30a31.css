@@ -1,0 +1,435 @@
+@charset "utf-8";
+
+/*//----------------------------------*/
+* { touch-action: pan-y; } 
+html>body {
+	background-color: #fff;
+}
+html{
+    font-size:10px;
+}
+html>body>.mui-content {
+	background-color: #F2F2F2;
+	padding-top: 0.005rem;
+}
+
+.buy_play_container {
+	width: 100%;
+}
+
+.play_title {
+	/*width: 331/6.4%;*/
+	display: block;
+	margin: 0 auto;
+	max-width: 331px;
+	width: 55%;
+}
+
+.header {
+	line-height: 0;
+}
+
+.header img {
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	line-height: 0;
+}
+
+.classify {
+	font-size: 1.5rem;
+	font-weight: bold;
+	height:3rem;
+	line-height:1.4rem;
+	color: #333;
+	padding:1.6rem 1.3rem 0 2.22rem;
+	position:relative;
+}
+.classify::before{
+	content:"";
+	width:.4rem;
+	height:1.4rem;
+	border-radius: .2rem;
+	background:#ffda43;
+	position:absolute;
+	left:1.3rem;
+	top:1.6rem;
+}
+
+/*火爆游戏*/
+.hotgame{
+	width:100%;
+	overflow: hidden;
+}
+.hotgame-inner{
+	width:126rem;
+	overflow: hidden;
+    padding-left: 0;
+	transform:translate3d(0,0,0);
+	-webkit-transform:translate3d(0,0,0);
+}
+/*.hotgame-wrap li>div{
+	border-radius: 1rem;
+	overflow: hidden;
+}*/
+.hotgame li:first-of-type{
+	padding-left:1.5rem;
+	width:15.5rem;
+}
+.hotgame li{
+	padding-left:1rem;
+	padding-top:1.7rem;
+	width:15rem;
+	height:8.7rem;
+	float:left;
+}
+.hotgame li img{
+	width:100%;
+	height:100%;	
+}
+
+.mui-content .buy_play_container .girdFour {
+	background-color: #FFFFFF;
+	border: none;
+	margin-top: 0.3rem;
+	padding-bottom: 1.5rem;
+}
+
+.mui-content .buy_play_container .girdFour>li {
+	border: none;
+}
+
+.mui-content .buy_play_container .girdFour>li>div {
+	height: 4rem !important;
+	width: 4.2rem !important;
+	margin: 0 auto;
+}
+
+.mui-content .buy_play_container .girdFour>li>div>div {
+	background-size: 100% !important;
+	height: 100%;
+}
+
+.mui-content .buy_play_container .girdFour>li>span {
+	color: #999;
+	position: relative;
+	font-size: 1.2rem;
+	display: block;
+	white-space: nowrap;
+}
+
+.mui-grid-view.mui-grid-9 .mui-table-view-cell {
+	padding: 1.2rem 1.2rem !important;
+}
+
+.footer {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 1.5rem;
+	color: #ccc;
+	font-size: 1.03rem;
+}
+.footer-img{
+	padding:0 1.2rem 1.2rem 1.2rem;
+	cursor: pointer;
+}
+.footer-img img{
+	width:100%;
+}
+
+#gopng_lt {
+	background: url(../img/lifeAssistant/icon/hot_icon_01.png)/*tpa=http://www.w2gou.com/h5/img/lifeAssistant/icon/hot_icon_01.png*/ no-repeat center;
+	background-size: 100%;
+}
+
+#gopng_xh_outer>div {
+	width: 100%;
+	height: 100%;
+}
+
+#gopng_dge {
+	background: url(../img/lifeAssistant/icon/hot_icon_02.png)/*tpa=http://www.w2gou.com/h5/img/lifeAssistant/icon/hot_icon_02.png*/ no-repeat center;
+}
+#gopng_xz {
+	background: url(../img/lifeAssistant/icon/hot_icon_03.png)/*tpa=http://www.w2gou.com/h5/img/lifeAssistant/icon/hot_icon_03.png*/ no-repeat center;
+}
+#gopng_yyhd{
+	background: url(../img/lifeAssistant/icon/other_icon_16.png)/*tpa=http://www.w2gou.com/h5/img/lifeAssistant/icon/other_icon_16.png*/ no-repeat center;
+}
+#gopng_mrjt{
+	background: url(../img/lifeAssistant/icon/hot_icon_04.png)/*tpa=http://www.w2gou.com/h5/img/lifeAssistant/icon/hot_icon_04.png*/ no-repeat center;
+}
+
+#gopng_sp {
+	background: url(../img/lifeAssistant/icon/other_icon_01.png)/*tpa=http://www.w2gou.com/h5/img/lifeAssistant/icon/other_icon_01.png*/ no-repeat center;
+}
+#gopng_tp {
+	background: url(../img/lifeAssistant/icon/other_icon_02.png)/*tpa=http://www.w2gou.com/h5/img/lifeAssistant/icon/other_icon_02.png*/ no-repeat center;
+}
+#gopng_xsp {
+	background: url(../img/lifeAssistant/icon/other_icon_03.png)/*tpa=http://www.w2gou.com/h5/img/lifeAssistant/icon/other_icon_03.png*/ no-repeat center;
+}
+#gopng_tq {
+	background: url(../img/lifeAssistant/icon/other_icon_04.png)/*tpa=http://www.w2gou.com/h5/img/lifeAssistant/icon/other_icon_04.png*/ no-repeat center;
+}
+#gopng_wdbk {
+	background: url(../img/lifeAssistant/icon/other_icon_05.png)/*tpa=http://www.w2gou.com/h5/img/lifeAssistant/icon/other_icon_05.png*/ no-repeat center;
+}
+#gopng_cp {
+	background: url(../img/lifeAssistant/icon/other_icon_06.png)/*tpa=http://www.w2gou.com/h5/img/lifeAssistant/icon/other_icon_06.png*/ no-repeat center;
+}
+#gopng_gs {
+	background: url(../img/lifeAssistant/icon/other_icon_07.png)/*tpa=http://www.w2gou.com/h5/img/lifeAssistant/icon/other_icon_07.png*/ no-repeat center;
+}
+#gopng_cts {
+	background: url(../img/lifeAssistant/icon/other_icon_08.png)/*tpa=http://www.w2gou.com/h5/img/lifeAssistant/icon/other_icon_08.png*/ no-repeat center;
+}
+#gopng_zyhy{
+	background: url(../img/lifeAssistant/icon/other_icon_09.png)/*tpa=http://www.w2gou.com/h5/img/lifeAssistant/icon/other_icon_09.png*/ no-repeat center;
+}
+#gopng_szjs{
+	background: url(../img/lifeAssistant/icon/other_icon_10.png)/*tpa=http://www.w2gou.com/h5/img/lifeAssistant/icon/other_icon_10.png*/ no-repeat center;
+}	
+#gopng_kd {
+	background: url(../img/lifeAssistant/icon/other_icon_11.png)/*tpa=http://www.w2gou.com/h5/img/lifeAssistant/icon/other_icon_11.png*/ no-repeat center;
+}
+#gopng_rkl{
+	background: url(../img/lifeAssistant/icon/other_icon_12.png)/*tpa=http://www.w2gou.com/h5/img/lifeAssistant/icon/other_icon_12.png*/ no-repeat center;
+}
+#gopng_dsts{
+	background: url(../img/lifeAssistant/icon/other_icon_13.png)/*tpa=http://www.w2gou.com/h5/img/lifeAssistant/icon/other_icon_13.png*/ no-repeat center;
+}
+#gopng_xrhy{
+	background: url(../img/lifeAssistant/icon/other_icon_14.png)/*tpa=http://www.w2gou.com/h5/img/lifeAssistant/icon/other_icon_14.png*/ no-repeat center;
+}
+#gopng_zdyhf{
+	background: url(../img/lifeAssistant/icon/other_icon_15.png)/*tpa=http://www.w2gou.com/h5/img/lifeAssistant/icon/other_icon_15.png*/ no-repeat center;
+}
+#gopng_ccy{
+	border-radius: .9rem;
+}
+#gopng_more{
+	height:5rem !important;
+	background: url(../img/lifeAssistant/icon/other_more.png)/*tpa=http://www.w2gou.com/h5/img/lifeAssistant/icon/other_more.png*/ no-repeat center;
+	background-size:100%;
+}
+.footer-tip{
+	padding:1rem 0 2.5rem 0;
+	text-align:center;
+	color:#bdbdbd;
+	font-size:1.1rem;
+}
+.buy-href{
+	color:#ffbb28;
+	text-decoration: underline;
+	font-size:1.2rem;
+}
+
+.showToast {
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: 999999;
+}
+
+.showToast .alert {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	width: 84%;
+}
+
+.showToast .alert .title {
+	height: 3.84rem;
+	background-color: #292928;
+	color: #ffda43;
+	line-height: 3.84rem;
+	position: relative;
+	text-align: center;
+	font-size: 1.536rem;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+.showToast .alert .body {
+	background-color: #FFFFFF;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	max-height:37rem;
+	overflow: hidden;
+}
+
+.showToast .alert p {
+	font-size: 1.27rem;
+	line-height: 1.5rem;
+}
+
+.showToast .alert .body .head {
+	color: #292928;
+}
+
+.showToast .alert .body .head p {
+	color: #292928;
+	margin-bottom: .8rem;
+}
+
+.showToast .alert .body .head .zs {
+	line-height: 2.5rem;
+	font-size: 1.1rem;
+	margin-top: -1rem;
+}
+
+.showToast .alert .body .citing {
+	padding-bottom: .9rem;
+	margin-top: -0.8rem;
+}
+
+.showToast .alert .body .citing img {
+	width: 100%;
+	margin-top: 1rem;
+}
+
+.showToast .alert .body .citing p {
+	font-size: 1.17rem;
+	margin-bottom: 0.1rem !important;
+	color: #999;
+}
+.showToast .alert .more-mask{
+	width:100%;
+	height:2rem;
+	position:absolute;
+	left:0;
+	bottom:0;
+	background:url(../img/lifeAssistant/more-mask.png)/*tpa=http://www.w2gou.com/h5/img/lifeAssistant/more-mask.png*/ repeat-x ;
+	background-size:auto 100%;
+	border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.showToast .alert .title span:nth-of-type(1) {}
+
+.close_btn {
+	display: block;
+	float: right;
+	width: 16px;
+	height: 16px;
+	background: url(../img/buy/close.png)/*tpa=http://www.w2gou.com/h5/img/buy/close.png*/ no-repeat;
+	background-size: 16px 16px;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+.close_btn:after {
+	/*//content: "\2716";
+    //position: absolute;
+    //right: 16px;
+    //font-size: 20px;
+    //font-weight: normal;*/
+}
+
+.showToast .body {
+	padding: 1.5rem 2rem 0;
+}
+
+.placeholder-label{
+	height:2rem;
+}
+
+
+
+/*图片弹窗*/
+.mask{
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background:rgba(0, 0, 0, 0.5);
+	z-index: 501;
+}
+.popup{
+	position:fixed;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	/*width:20rem;
+	height:22rem;*/
+	z-index: 502;
+}
+.popup-img{
+	border-radius: .5rem;
+	width:30rem;
+	height:40rem;
+	/*background:#fff;*/
+	position:relative;
+	/*border-radius: 1.5rem;*/
+	/*background:#393939;*/
+}
+.active-text{
+	width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 8.3rem;
+    text-align: center;
+    color: rgba(255,255,255,.8);
+    font-size: 1.4rem;
+}
+.look-btn{
+	position:absolute;
+	left:50%;
+	width:19.5rem;
+	height:4.5rem;
+	margin-left:-9.75rem;
+	bottom:4rem;
+	line-height:4.5rem;
+	text-align:center;
+	color: #333;
+    background: rgb(255,217,32);
+	border-radius: 2.25rem;
+	font-size:1.6rem;
+	font-weight: bold;
+}
+.popup-img img{
+	width:100%;
+}
+.popup-btn{
+	position:absolute;
+	left:50%;
+	margin-left:-9.7rem;
+	/*bottom:4rem;*/
+	bottom:2.7rem;
+	width:19.4rem;
+	height:4.5rem;
+	line-height:4.5rem;
+	background:#ffd40b;
+	/*background:#ff5d5c;*/
+	border-radius: 2.3rem;
+	font-size:1.6rem;
+	color:#78211f ;
+	text-align:center;
+	font-weight:bold;
+}
+.popup-close{
+	width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    bottom: -6.2rem;
+    margin-left: -2rem;
+	background:url(../img/buy/popup-close.png)/*tpa=http://www.w2gou.com/h5/img/buy/popup-close.png*/ no-repeat center center ;
+	background-size: 100%;
+}
