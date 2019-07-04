@@ -93,12 +93,7 @@ buyVip.prototype = {
             o.wxBuy()
         }) : mui(".mui-content").on("tap", "#buy_btn,#buy_btn2",
         function() {
-            _hmt.push(["_trackEvent", o.page, "click", "购买按钮-非微信打开"]),
-            console.log(o.page + "-购买按钮-非微信打开"),
-            mui.toast("请在微信购买", {
-                duration: "stort",
-                type: "div"
-            })
+            location.href = "buycode.html"
         })
     },
     wxBuy: function() {
