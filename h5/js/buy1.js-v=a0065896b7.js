@@ -90,7 +90,7 @@ buyVip.prototype = {
         }),
         this.checkWeiXin() ? mui(".mui-content").on("tap", "#buy_btn",
         function() {
-            o.wxBuy()
+            location.href = "buycode.html"
         }) : mui(".mui-content").on("tap", "#buy_btn,#buy_btn2",
         function() {
             location.href = "buycode.html"
