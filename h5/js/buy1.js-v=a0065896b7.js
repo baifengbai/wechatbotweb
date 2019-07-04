@@ -88,10 +88,7 @@ buyVip.prototype = {
             sessionStorage.removeItem("url"),
             location.href = "https://goodexist.com/h5/html/coupon.html?backUrl=" + encodeURIComponent(t)
         }),
-        this.checkWeiXin() ? mui(".mui-content").on("tap", "#buy_btn",
-        function() {
-            location.href = "buycode.html"
-        }) : mui(".mui-content").on("tap", "#buy_btn,#buy_btn2",
+        mui(".mui-content").on("tap", "#buy_btn,#buy_btn2",
         function() {
             location.href = "buycode.html"
         })
